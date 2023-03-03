@@ -1,5 +1,17 @@
-export const colorCode = () => {
-  throw new Error('Delete this line and implement this function')
+export const colorCode = (color: string): number | null => {
+  let value = COLORS.indexOf(color.toLowerCase());
+  return value >= 0 ? value : null;
 }
 
-export const COLORS = undefined
+export const COLORS = [
+  'black',
+  'brown',
+  'red',
+  'orange',
+  'yellow',
+  'green',
+  'blue',
+  'violet',
+  'grey',
+  'white',
+]
